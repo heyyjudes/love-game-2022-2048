@@ -150,10 +150,10 @@ HTMLActuator.prototype.updateBestScore = function (bestScore) {
 
 HTMLActuator.prototype.message = function (ended) {
   var type    = ended ? "game-won" : "game-over";
-  var message = window.game.won ? result_msg + "PhD!" : result_msg + "<abbr title='Certificate of Postgraduate Studies'>CPGS</abbr>!";
+  var message = window.game.won ? result_msg + "in LOVE and a Relationship!" : result_msg + "in a relationship!";
   if(!window.game.won) {
-    if(window.game.maxTile >= 1024) message = "One step away!";
-    else if(window.game.maxTile >= 512) message = "Not bad!";
+    if(window.game.maxTile >= 1024) message = "Good try!";
+    else if(window.game.maxTile >= 512) message = "Forever Alone!";
   }
   else if(window.game.maxTile > 2048) {
     message = result_msg + val2caption(window.game.maxTile) + "!";
@@ -172,7 +172,7 @@ HTMLActuator.prototype.clearMessage = function () {
 HTMLActuator.prototype.refreshRel = function (remainingTime) {
   if(remainingTime > 0){
     this.titleBar.textContent = game_alt_title;
-    this.statusBar.textContent = "Your relationship will last for "+remainingTime+"s.";
+    this.statusBar.textContent = "Your dopamine will last for "+remainingTime+"s.";
     this.progressBar.textContent = game_alt_title;
     this.progressBar.style.display = "";
     if(window.innerWidth < 520)
@@ -182,7 +182,7 @@ HTMLActuator.prototype.refreshRel = function (remainingTime) {
   }
   else{
     this.titleBar.textContent = game_title;
-    this.statusBar.textContent = "Move the bricks to complete your PhD.";
+    this.statusBar.textContent = "Just put keep putting yourself out there.";
     this.progressBar.textContent = "";
     this.progressBar.style.display = "none";
     this.progressBar.style.width = "0";

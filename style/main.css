@@ -2,8 +2,8 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #faf8ef;
-  color: #776E65;
+  background: #f8edeb;
+  color: #b5838d;
   font-family: "Clear Sans", "Helvetica Neue", Arial, "Hiragino Sans GB", "PingFang SC", "Microsoft Yahei", "Source Han Sans GB", sans-serif;
   font-size: 18px; }
 
@@ -50,7 +50,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #b5838d;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -88,10 +88,10 @@ h1.title {
     animation-fill-mode: both; }
 
 .score-container:after {
-  content: "Hair loss"; }
+  content: "HP"; }
 
 .best-container:after {
-  content: "Max"; }
+  content: "Max HP"; }
 
 p {
   margin-top: 0;
@@ -99,7 +99,7 @@ p {
   line-height: 1.65; }
 
 a {
-  color: #776E65;
+  color: #b5838d;
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer; }
@@ -144,7 +144,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: #b5838d;
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -178,7 +178,7 @@ hr {
       margin-top: 59px; }
     .game-container .game-message a {
       display: inline-block;
-      background: #8f7a66;
+      background: #b5838d;
       border-radius: 3px;
       padding: 0 20px;
       text-decoration: none;
@@ -324,7 +324,7 @@ hr {
     z-index: 10;
     font-size: 30px; }
   .tile.tile-0 .tile-inner {
-    background: #776E65;
+    background: #6c757d;
     color: #eee4da;
     box-shadow: 0 0 50px 15px rgba(0,0,0,0.2), inset 0 0 0 1px rgba(255, 255, 255, 0); }
     @media screen and (max-width: 520px) {
@@ -543,11 +543,11 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+  background: #b5838d;
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
-  color: #f9f6f2;
+  color: #f8edeb;
   height: 40px;
   line-height: 42px;
   display: block;
@@ -583,11 +583,11 @@ hr {
   }
 
   .score-container:after {
-    content: "Hair loss";
+    content: "HP";
     font-size: 11px; }
 
   .best-container:after {
-    content: "Max"; }
+    content: "Best HP"; }
 
   .heading {
     margin-bottom: 10px; }
@@ -617,7 +617,7 @@ hr {
       -ms-user-select: none;
       -ms-touch-action: none;
       touch-action: none;
-      background: #bbada0;
+      background: #bfc2d0;
       border-radius: 6px;
       width: 280px;
       height: 280px;
